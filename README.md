@@ -20,7 +20,7 @@ Download PVRTexTool (free) to view the .pvr file and save as .png. Edit in your 
 ## The CONSOLE Files
 These files are saved as .csv and can be opened with any text editor or Microsoft Excel. *Note: Between application update 2.00.14 and current version, it appears only SOME edits within these files have a noticeable in-game impact. Still testing...
 
-- NBAJAM_Players_CONSOLE.csv : Player names, unique ID, biographical information, in-game scaled height, player ratings, team assignment, assigned animations and tendencies. *Recently discovered: changing player's first/last name causes game crash. This was not the case in 2.00.14.
+- NBAJAM_Players_CONSOLE.csv : Player names, unique ID, biographical information, in-game scaled height, player ratings, team assignment, assigned animations and tendencies. *Recently discovered: changing player's first/last name causes game crash. This was not the case in 2.00.14.*
 
 - NBAJAM_Teams_CONSOLE.csv : Team name, city, abbreviation, overall (rating?? -- unclear where this is used), x and y coordinates for in-game map, color scheme, division and stadium
 
