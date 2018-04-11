@@ -14,8 +14,7 @@ Download PVRTexTool (free) to view the .pvr file and save as .png. Edit in your 
 
 - ga: player animation files in .anim format (very little work has been done on these files)
 
-- a: all audio files stored in a .caf (Core Audio File) format. The core audio chunks are encoded in a proprietary .ea_cdata format. Use the ffmpeg command line tool (or the Audacity plugin) to decode and convert this audio to .wav or 16bit linear PCM (however, once this is done, it's currently not possible to re-encode the audio as .ea_cdata wrapped by .caf for insertion into the game).
-    *NB: the above applies to only ORIGINAL audio files. Audio for players added in updates can be imported as raw audio into Audacity,          but it's unclear as to what format the core audio chunks are in (Andrew Wiggins and Jamal Crawford are reproducible examples)*
+- a: all audio files stored with .caf file extension. There are two types of audio file: compressed and uncompressed. Open the audio file with a hex editor (HxD is free) and look at the first byte. If the hex-value is 02, the file is uncompressed. If the hex-value is 04, the file is compressed using a proprietary codec from EA (XAS ADPCM). There will be a second README for how to import, edit and re-insert these audio files.
     
 ## The CONSOLE Files
 These files are saved as .csv and can be opened with any text editor or Microsoft Excel. *Note: Between application update 2.00.14 and current version, it appears only SOME edits within these files have a noticeable in-game impact. Still testing...
